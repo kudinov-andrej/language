@@ -33,8 +33,8 @@ function Result() {
                 </li>
                 <li className="result-item">
                     <div className='result-item-img'>
-                        <h2 className='result-item-title'>Placement Test Success</h2>
-                        <p className='result-item-text'>95%</p>
+                        <h2 className='result-item-title'>95%</h2>
+                        <p className='result-item-text'>Placement Test Success</p>
                     </div>
                 </li>
             </ul>
