@@ -3,6 +3,7 @@ import React from 'react';
 import Header from './Header';
 import Case from './Case';
 import Result from './Result';
+import Form from './Form';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Case />
       <Result />
+      <Form />
     </div>
   );
 }
