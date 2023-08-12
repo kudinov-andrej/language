@@ -1,0 +1,131 @@
+.case {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 1440px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.case__title {
+    margin: 0;
+    padding: 0;
+    margin-top: 83px;
+    margin-bottom: 40px;
+    max-width: 250px;
+    color: #071629;
+    text-align: center;
+    font-family: SourceSansPro;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+.case__text {
+    margin: 0;
+    padding: 0;
+    max-width: 640px;
+    margin-bottom: 97px;
+    color: #071629;
+    text-align: center;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+
+}
+
+@media screen and (max-width: 540px) {
+    .case__text {
+        max-width: 90%;
+    }
+}
+
+.advantages-list {
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 110px;
+    width: 69.58%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 58px;
+}
+
+@media screen and (max-width: 1000px) {
+    .advantages-list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .advantages-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+.advantages-item {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    max-width: 250px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+@media screen and (max-width: 540px) {
+    .advantages-item {
+        max-width: 400px;
+    }
+}
+
+
+
+.advantages-item-img {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 23px;
+    max-width: 100px;
+}
+
+.advantages-item-title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 13px;
+    max-width: 207px;
+    color: #071629;
+    text-align: center;
+    font-family: SourceSansPro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    /* 144.444% */
+}
+
+.advantages-item-text {
+    margin: 0;
+    padding: 0;
+    max-width: 207px;
+    color: #071629;
+    text-align: center;
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 185.714% */
+}
