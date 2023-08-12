@@ -11,9 +11,18 @@
     background-repeat: no-repeat;
 }
 
+
+
+@media screen and (max-width: 540px) {
+    .header {
+        background-image: url('./images/object3.png');
+    }
+}
+
 .header-conteiner {
     margin: 0 auto;
     padding: 0;
+    margin-top: 29px;
     margin-bottom: 339px;
     width: 54.51%;
     display: flex;
@@ -22,6 +31,22 @@
     justify-content: space-between;
 
 }
+
+@media screen and (max-width: 1000px) {
+    .header-conteiner {
+        width: 82%;
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .header-conteiner {
+        width: 90%;
+        margin-bottom: 266px;
+    }
+}
+
+
 
 .header__logo {
     margin: 0;
@@ -34,11 +59,25 @@
     background-size: cover;
 }
 
+
 .header__navigation {
     margin: 0;
     padding: 0;
     max-width: 400px;
 }
+
+
+@media screen and (max-width: 640px) {
+    .header__navigation {
+        background-image: url('./images/menu.png');
+        width: 30px;
+        height: 30px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
 
 .header__navigation-list {
     margin: 0;
@@ -50,6 +89,12 @@
     justify-content: space-between;
     gap: 41px;
 
+}
+
+@media screen and (max-width: 650px) {
+    .header__navigation-list {
+        display: none;
+    }
 }
 
 .header__navigation-punct {
@@ -81,6 +126,18 @@
     color: #FFF;
 }
 
+@media screen and (max-width: 1000px) {
+    .project {
+        width: 82%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .project {
+        width: 90%;
+    }
+}
+
 .project__title {
     margin: 0;
     padding: 0;
@@ -109,9 +166,16 @@
     line-height: normal;
 }
 
+@media screen and (max-width: 650px) {
+    .project__subtitle {
+        margin-bottom: 20px;
+    }
+}
+
 .project__link {
     margin: 0;
     padding: 0;
+    color: #FFF;
     text-decoration: none;
     cursor: pointer;
     max-width: 162px;
@@ -121,7 +185,7 @@
     margin: 0;
     padding: 0;
     border: none;
-    color: fff;
+    color: #FFF;
     margin-bottom: 65px;
     width: 162px;
     height: 44px;
@@ -140,7 +204,7 @@
     margin: 0;
     padding: 0;
     margin-bottom: 115px;
-    width: 54.51%;
+    width: 100%;
     max-width: 637px;
     color: #FFF;
     text-align: center;
@@ -150,4 +214,10 @@
     font-weight: 400;
     line-height: 26px;
 
+}
+
+@media screen and (max-width: 650px) {
+    .project__text {
+        margin-bottom: 106px;
+    }
 }

@@ -18,7 +18,7 @@ function Header() {
                 <h2 className='project__title'>Global Linguistic Academy: Mastering Languages for a Connected World</h2>
                 <p className='project__subtitle'>Unlocking Worlds Through Language Mastery</p>
                 <a className='project__link' href="tel:+79284702312">
-                    <button className='progect__button' type='button' >Позвонить</button>
+                    <button className='progect__button' type='button' >Сall</button>
                 </a>
                 <p className='project__text'>Discover the Global Linguistic Academy: Your path to language mastery in an interconnected world. Our vibrant hub offers immersive courses in various languages, personalized for beginners and those seeking fluency. Gain a competitive edge in the global job market through enriched cultural experiences. Join us and explore linguistic and cultural horizons!</p>
             </section>
