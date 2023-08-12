@@ -4,6 +4,7 @@ import Header from './Header';
 import Case from './Case';
 import Result from './Result';
 import Form from './Form';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Case />
       <Result />
       <Form />
+      <Footer />
     </div>
   );
 }
