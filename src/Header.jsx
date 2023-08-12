@@ -2,12 +2,17 @@ import './Header.css';
 import React from 'react';
 import { Link } from 'react-scroll';
 
-function Header() {
+function Header({ toggleMenu }) {
     return (
         <header className='header'>
             <div className='header-conteiner'>
                 <div className='header__logo'></div>
+
                 <nav className='header__navigation'>
+                    <button className='header__navigation-button'
+                        type='button'
+                        onClick={toggleMenu}
+                    ></button>
                     <ul className='header__navigation-list'>
                         <li className='header__navigation-punct'><Link to="section1" smooth={true} duration={1000}>What we do</Link></li>
                         <li className='header__navigation-punct'><Link to="section2" smooth={true} duration={1500}>Our results</Link></li>

@@ -67,17 +67,24 @@
 }
 
 
-@media screen and (max-width: 640px) {
-    .header__navigation {
+.header__navigation-button {
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+    .header__navigation-button {
+        border: none;
+        background-color: transparent;
+        display: block;
         background-image: url('./images/menu.png');
         width: 30px;
         height: 30px;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+
     }
 }
-
 
 .header__navigation-list {
     margin: 0;

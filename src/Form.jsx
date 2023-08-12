@@ -2,7 +2,7 @@ import React from 'react';
 import './Form.css';
 import { useFormWithValidation } from './useFormValidation';
 
-function Form() {
+function Form({ setSubmitMessage, submitMessage }) {
 
     const { values, handleChange, errors, isValid } = useFormWithValidation();
 
@@ -11,6 +11,10 @@ function Form() {
         console.log({
             "пользовательский ввод": values,
         })
+        setSubmitMessage("Data sent successfully");
+        setTimeout(() => {
+            setSubmitMessage("");
+        }, 3000)
     }
 
     return (
@@ -55,6 +59,7 @@ function Form() {
                     "contact__button contact__button-disabled"}
                     type='submit'
                     disabled={!isValid}>Сontact me</button>
+                <span className='contact__form-submit'>{submitMessage}</span>
             </form>
         </section>
     )
