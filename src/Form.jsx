@@ -14,7 +14,7 @@ function Form() {
     }
 
     return (
-        <section className='contact'>
+        <section className='contact' id="section3">
             <h2 className='contact__title'>Contact</h2>
             <form className='contact__form' onSubmit={handleSubmit}>
                 <input className='contact__form-input'

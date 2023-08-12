@@ -9,7 +9,7 @@ function Result() {
 
 
     return (
-        <section className='result'>
+        <section className='result' id="section2">
             <h2 className="result__title">Achievements of Our Language School</h2>
             <p className="result__text"> In the past year, our language school achieved remarkable results. A 92% course completion rate, 80% of students improved their speaking proficiency, 65% actively engaged in cultural events, and 75% demonstrated higher placement test scores. Join our success story!</p>
             <ul className="result-list">

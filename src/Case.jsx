@@ -9,7 +9,7 @@ function Case() {
 
 
     return (
-        <section className='case'>
+        <section className='case' id="section1">
             <h2 className="case__title">What we do?</h2>
             <p className="case__text">Our English language school offers immersive learning experiences, helping students develop strong language skills through interactive lessons, engaging activities, and cultural exploration. Join us to unlock a world of communication opportunities!</p>
             <ul className="advantages-list">
