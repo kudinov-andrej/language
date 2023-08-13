@@ -17,6 +17,7 @@ function Form({ setSubmitMessage, submitMessage }) {
         }, 3000)
     }
 
+
     return (
         <section className='contact' id="section3">
             <h2 className='contact__title'>Contact</h2>
