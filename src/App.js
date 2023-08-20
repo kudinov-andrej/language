@@ -43,7 +43,37 @@ function App() {
     };
   }, [openPopupMenu, onClose]);
 
+  // решение задач
 
+  console.log("A");
+
+  setTimeout(function () {
+    console.log("B");
+    Promise.resolve().then(function () {
+      console.log("C");
+      Promise.resolve().then(function () {
+        console.log("D");
+      });
+    });
+  });
+
+  Promise.resolve().then(function () {
+    console.log("E");
+    setTimeout(function () {
+      console.log("F");
+    }, 0);
+    Promise.resolve().then(function () {
+      console.log("G");
+    });
+  });
+
+  console.log("H");
+
+
+
+
+
+  //решение задач
   return (
     <div className="App">
       <Header
