@@ -12,11 +12,7 @@ function Form({ setSubmitMessage, submitMessage, handleSubmit }) {
             "пользовательский ввод": values,
         })
         const formData = values;
-        handleSubmit(formData)
-        setSubmitMessage("Data sent successfully");
-        setTimeout(() => {
-            setSubmitMessage("");
-        }, 3000)
+        handleSubmit(formData);
     }
 
 

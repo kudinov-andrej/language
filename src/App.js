@@ -47,9 +47,18 @@ function App() {
   const handleSubmit = async (formData) => {
     try {
       await axios.post('https://api.diplomak.nomoreparties.sbs/send-email', formData);
-      console.log("Данные успешно отправлены")
+      console.log("Данные успешно отправлены");
+      setSubmitMessage("Data sent successfully");
+      setTimeout(() => {
+        setSubmitMessage("");
+      }, 3000)
     } catch (error) {
       console.log("Ошибка при отправке данных")
+      setSubmitMessage("Error sending data");
+      setTimeout(() => {
+        setSubmitMessage("");
+      }, 3000)
+
     }
   };
 
@@ -61,7 +70,6 @@ function App() {
       <Case />
       <Result />
       <Form
-        setSubmitMessage={setSubmitMessage}
         submitMessage={submitMessage}
         handleSubmit={handleSubmit}
       />
