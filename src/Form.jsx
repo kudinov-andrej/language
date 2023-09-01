@@ -2,15 +2,17 @@ import React from 'react';
 import './Form.css';
 import { useFormWithValidation } from './useFormValidation';
 
-function Form({ setSubmitMessage, submitMessage }) {
+function Form({ setSubmitMessage, submitMessage, handleSubmit }) {
 
     const { values, handleChange, errors, isValid } = useFormWithValidation();
 
-    const handleSubmit = (evt) => {
+    const handleClick = (evt) => {
         evt.preventDefault();
         console.log({
             "пользовательский ввод": values,
         })
+        const formData = values;
+        handleSubmit(formData)
         setSubmitMessage("Data sent successfully");
         setTimeout(() => {
             setSubmitMessage("");
@@ -21,7 +23,7 @@ function Form({ setSubmitMessage, submitMessage }) {
     return (
         <section className='contact' id="section3">
             <h2 className='contact__title'>Contact</h2>
-            <form className='contact__form' onSubmit={handleSubmit}>
+            <form className='contact__form' onSubmit={handleClick}>
                 <input className='contact__form-input'
                     placeholder='Name'
                     name='name'

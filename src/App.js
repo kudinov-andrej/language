@@ -6,6 +6,7 @@ import Result from './Result';
 import Form from './Form';
 import Footer from './Footer';
 import PopupMenu from './PopupMenu';
+import axios from 'axios';
 
 function App() {
 
@@ -43,6 +44,15 @@ function App() {
     };
   }, [openPopupMenu, onClose]);
 
+  const handleSubmit = async (formData) => {
+    try {
+      await axios.post('https://api.diplomak.nomoreparties.sbs/send-email', formData);
+      console.log("Данные успешно отправлены")
+    } catch (error) {
+      console.log("Ошибка при отправке данных")
+    }
+  };
+
   return (
     <div className="App">
       <Header
@@ -53,6 +63,7 @@ function App() {
       <Form
         setSubmitMessage={setSubmitMessage}
         submitMessage={submitMessage}
+        handleSubmit={handleSubmit}
       />
       <PopupMenu
         openPopupMenu={openPopupMenu}
